@@ -1,0 +1,11 @@
+spring:
+  jpa:
+    database: mysql
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://svc.sel5.cloudtype.app:31063/Food?serverTimezone=Asia/Seoul
+    username: root
+    password: jwhm2034
