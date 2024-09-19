@@ -17,7 +17,8 @@
 
 ### [Restful API]
 
-'''JAVA
+'''Java
+
 @RestController
 @RequestMapping("/api")
 public class FoodController {
@@ -38,6 +39,7 @@ public class FoodController {
         return foodService.findRandomFoodByCategories(cate1, cate2);
     }
 }
+
 '''
   
 
