@@ -17,7 +17,7 @@
 
 ### [Restful API]
 
-'''Java
+'''java
 
 @RestController
 @RequestMapping("/api")
