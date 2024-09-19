@@ -17,6 +17,29 @@
 
 ### [Restful API]
 
+'''c
+@RestController
+@RequestMapping("/api")
+public class FoodController {
+
+    private final FoodService foodService;
+
+    public FoodController(FoodService foodService) {
+        this.foodService = foodService;
+    }
+
+    @GetMapping("/foods")
+    public List<Food> getAllFoods() {
+        return foodService.getAllFoods();
+    }
+
+    @GetMapping("/categoris")
+    public List<Food> findFoodByCategories(String cate1, String cate2) {
+        return foodService.findRandomFoodByCategories(cate1, cate2);
+    }
+}
+
+'''
   
 
 ### [Repository]
