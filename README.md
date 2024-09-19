@@ -78,11 +78,9 @@ public class JpaFoodRepository implements FoodRepository{
 ```java
 
 @Transactional
-public class FoodService 
-
+public class FoodService {
     private final FoodRepository foodRepository;
     ///중략
-
 
     public List<Food> getAllFoods() {
         List<Food> foods = foodRepository.findALL();
@@ -93,6 +91,7 @@ public class FoodService
     public List<Food> findRandomFoodByCategories(String cate1, String cate2) {
         return foodRepository.RandomfindBycate1Andcate2(cate1, cate2);
     }
+}
 
 ```
 
