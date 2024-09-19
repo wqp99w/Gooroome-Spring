@@ -43,7 +43,7 @@ public class FoodController {
 ```
   
 
-### [Repository
+### [Repository]
 
 ```java
 
@@ -75,7 +75,26 @@ public class JpaFoodRepository implements FoodRepository{
   
 ### [Service]
 
+```java
 
+@Transactional
+public class FoodService 
+
+    private final FoodRepository foodRepository;
+    ///중략
+
+
+    public List<Food> getAllFoods() {
+        List<Food> foods = foodRepository.findALL();
+        foods.forEach(food -> System.out.println("Food: " + food.getFood() + ", Category1: " + food.getCate1() + ", Category2: " + food.getCate2()));
+        return foodRepository.findALL();
+    }
+
+    public List<Food> findRandomFoodByCategories(String cate1, String cate2) {
+        return foodRepository.RandomfindBycate1Andcate2(cate1, cate2);
+    }
+
+```
 
 
 
