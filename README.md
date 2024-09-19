@@ -43,8 +43,34 @@ public class FoodController {
 ```
   
 
-### [Repository]
+### [Repository
 
+```java
+
+public interface FoodRepository{
+    List<Food> findByCate1AndCate2(String cate1, String cate2);
+    List<Food> RandomfindBycate1Andcate2(String cate1, String cate2);
+
+    List<Food> findALL();
+
+}
+
+```
+
+```java
+
+public class JpaFoodRepository implements FoodRepository{
+    private final EntityManager em;
+
+    public JpaFoodRepository(EntityManager em) {this.em = em; }
+
+    @Override
+    public List<Food> findByCate1AndCate2(String cate1, String cate2) {
+         return em.createQuery("select f from Food f where f.cate1 = :cate1 AND f.cate2 = :cate2", Food.class)
+                 .getResultList();
+    }
+
+```
 
   
 ### [Service]
