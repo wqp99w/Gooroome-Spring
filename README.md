@@ -17,7 +17,7 @@
 
 ### [Restful API]
 
-'''java
+```java
 
 @RestController
 @RequestMapping("/api")
@@ -40,7 +40,7 @@ public class FoodController {
     }
 }
 
-'''
+```
   
 
 ### [Repository]
