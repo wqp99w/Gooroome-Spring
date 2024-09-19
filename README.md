@@ -5,7 +5,7 @@
 
 ## 프로젝트 개요
 
-애플리케이션의 백엔드 서버를 구성하기 위해 Spring Boot와 Restful API를 사용하였습니다.
+애플리케이션의 백엔드 서버를 구성하기 위해 Spring Boot와 Restful API를 MVC 패턴을 이용하여 개발하였습니다.
 
 ## 개발 환경
 
