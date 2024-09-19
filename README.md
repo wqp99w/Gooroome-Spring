@@ -17,7 +17,7 @@
 
 ### [Restful API]
 
-'''c
+'''
 @RestController
 @RequestMapping("/api")
 public class FoodController {
