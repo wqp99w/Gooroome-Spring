@@ -3,6 +3,11 @@
 2024.03-2024.06
 
 
+## 프런트엔드
+
+[프런트엔드](https://github.com/wqp99w/Gooroome)
+
+
 ## 프로젝트 개요
 
 애플리케이션의 백엔드 서버를 구성하기 위해 Spring Boot와 Restful API를 MVC 패턴을 이용하여 개발하였습니다.
@@ -104,10 +109,6 @@ public class FoodService {
 
 + Service 클래스를 사용하여 코드의 가독성을 높였으며, 재사용성 또한 높였습니다.
 
-
-## 프런트엔드
-
-[프런트엔드](https://github.com/wqp99w/Gooroome)
 
 
 ## 시연 영상
