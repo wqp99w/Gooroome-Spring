@@ -102,6 +102,12 @@ public class FoodService {
 
 ```
 
++ Service 클래스를 사용하여 코드의 가독성을 높였으며, 재사용성 또한 높였습니다.
+
+
+## 프런트엔드
+[프런트엔드](https://github.com/wqp99w/Gooroome)
+
 
 
 
