@@ -41,6 +41,8 @@ public class FoodController {
 }
 
 ```
+
++ 안드로이드 앱과 스프링 서버의 통신을 위해 Restful API를 사용하여 안드로이드 앱과의 호환성을 높였습니다.
   
 
 ### [Repository]
@@ -57,6 +59,8 @@ public interface FoodRepository{
 
 ```
 
++ 레포지토리를 이용하여 데이터 접근 로직을 레포지토리에서 처리하게 하여 유지보수성과 재사용성을 향상시켰습니다.
+
 ```java
 
 public class JpaFoodRepository implements FoodRepository{
@@ -70,8 +74,11 @@ public class JpaFoodRepository implements FoodRepository{
                  .getResultList();
     }
 
+    //중략
+}
 ```
 
++ JPA를 사용하여 코드의 생산성과 유지보수성을 향상 시켰습니다.
   
 ### [Service]
 
